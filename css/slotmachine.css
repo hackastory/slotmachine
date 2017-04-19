@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.team-select {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 167px;
+    right: 332px;
+    left: 200px;
+}
+
+.team-select__next,
+.team-select__previous,
+.team-select__selected {
+    font-family: 'Roboto', sans-serif;
+    color: rgba( 0, 0, 0, 0.8 );
+}
+
+.team-select__next,
+.team-select__previous {
+    padding: 0 8px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.team-select__selected {
+    font-size: 45px;
+}
+
+/****************************/
+
+.machine {
+    display: flex;
+    padding: 250px 0 200px;
+
+}
+
+.machine__slots {
+    position: relative;
+    margin: 0 auto;
+}
+
+.machine__slots:before {
+    display: block;
+    position: relative;
+    content: '';
+    float: left;
+    width: 9px;
+    height: 250px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/slot-start-hook.jpg');
+}
+
+.machine__slots:after {
+    display: block;
+    position: relative;
+    content: '';
+    float: left;
+    width: 10px;
+    height: 250px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/slot-end-hook.jpg');
+}
+
+.machine__slot {
+    display: block;
+    position: relative;
+    float: left;
+    width: 151px;
+    height: 250px;
+}
+
+.machine__slot__cover {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/slot.png');
+}
+
+.machine__slot--first .machine__slot__cover {
+    background-image: url('/img/slot-start.png');
+}
+
+.machine__slot--last .machine__slot__cover {
+    background-image: url('/img/slot-end.png');
+}
+
+.machine__slot__member-name {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+
+    padding: 0 20px;
+    text-align: center;
+}
+.machine__slot--revealed .machine__slot__member-name {
+    opacity: 1;
+}
+
+.machine__slot__first-name {
+    margin: 0;
+}
+.machine__slot__surname {
+    margin: 0;
+}
+.machine__slot__company {
+    margin: 0;
+}
+
+.machine__slot__member-cover {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/slot-question.jpg');
+}
+
+.machine__slot:nth-child( 1 ).machine__slot--spinning .machine__slot__member-cover {
+    background-image: url('/img/hackastory-1.gif');
+}
+
+.machine__slot:nth-child( 2 ).machine__slot--spinning .machine__slot__member-cover {
+    background-image: url('/img/hackastory-2.gif');
+}
+
+.machine__slot:nth-child( 3 ).machine__slot--spinning .machine__slot__member-cover {
+    background-image: url('/img/hackastory-4.gif');
+}
+
+.machine__slot:nth-child( 4 ).machine__slot--spinning .machine__slot__member-cover {
+    background-image: url('/img/hackastory-3.gif');
+}
+
+.machine__slot:nth-child( 5 ).machine__slot--spinning .machine__slot__member-cover {
+    background-image: url('/img/hackastory-1.gif');
+}
+
+.machine__slot:nth-child( 6 ).machine__slot--spinning .machine__slot__member-cover {
+    background-image: url('/img/hackastory-4.gif');
+}
+
+
+/************************************************/
+
+.machine__arm {
+    position: absolute;
+    width: 295px;
+    height: 390px;
+    z-index: 0;
+    top: -202px;
+    right: -100px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/one-arm.jpg');
+
+    cursor: pointer;
+}
+
+.machine__shadow {
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50% );
+    bottom: -120px;
+    width: 454px;
+    height: 43px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/shadow.jpg');
+}

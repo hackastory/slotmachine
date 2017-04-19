@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hackastory Slotmachine</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/slotmachine.css">
+</head>
+<body>
+
+<div id="app">
+    <team-select
+        v-bind:teams="teams"
+        v-on:select="handleTeamSelect"
+    ></team-select>
+    <machine
+            v-if="selectedTeam"
+            v-bind:team="selectedTeam"></machine>
+</div>
+
+<script src="jspm_packages/system.js"></script>
+<script src="jspm.config.js"></script>
+<script>
+
+    System.import('slotmachine/js/SlotMachine.js').then( function ( module ) {
+        new module.default({
+            el: '#app'
+        });
+    });
+
+</script>
+
+</body>
+</html>
