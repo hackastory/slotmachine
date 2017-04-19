@@ -2,3 +2,7 @@ node_modules/
 jspm_packages/
 .idea/
 *.log
+teams.json
+
+#for now it's easiest to include the build version
+#build/

@@ -10,7 +10,6 @@
         <div class="machine__slot__member-name">
             <h3 v-html="member.firstName" class="machine__slot__first-name"></h3>
             <h4 v-html="member.surname" class="machine__slot__surname"></h4>
-            <h4 v-html="member.company" class="machine__slot__company"></h4>
         </div>
         <div class="machine__slot__member-cover"></div>
     </div>

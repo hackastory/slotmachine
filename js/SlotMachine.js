@@ -11,13 +11,28 @@ var SlotMachine = Vue.extend({
     data: function () {
         return {
             selectedTeam: null,
-            teams: teamData.teams
+            teams: null
         };
     },
 
     mounted: function () {
-        //test
-        //this.selectedTeam = this.teams[ 0 ];
+
+        var request = new XMLHttpRequest();
+        request.open('GET', '/teams.json', true );
+
+        request.onload = function () {
+            if ( request.status >= 200 && request.status < 400 ) {
+                this.teams = JSON.parse( request.responseText ).teams;
+            }
+
+        }.bind( this );
+
+        request.onerror = function () {
+
+        }.bind( this );
+
+        request.send();
+
     },
 
     methods: {
