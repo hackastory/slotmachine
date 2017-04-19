@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/img/slot-start-hook.jpg');
+    background-image: url('../img/slot-start-hook.jpg');
 }
 
 .machine__slots:after {
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/img/slot-end-hook.jpg');
+    background-image: url('../img/slot-end-hook.jpg');
 }
 
 .machine__slot {
@@ -91,15 +91,15 @@ h1, h2, h3, h4, h5, h6 {
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/img/slot.png');
+    background-image: url('../img/slot.png');
 }
 
 .machine__slot--first .machine__slot__cover {
-    background-image: url('/img/slot-start.png');
+    background-image: url('../img/slot-start.png');
 }
 
 .machine__slot--last .machine__slot__cover {
-    background-image: url('/img/slot-end.png');
+    background-image: url('../img/slot-end.png');
 }
 
 .machine__slot__member-name {
@@ -145,31 +145,31 @@ h1, h2, h3, h4, h5, h6 {
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/img/slot-question.jpg');
+    background-image: url('../img/slot-question.jpg');
 }
 
 .machine__slot:nth-child( 1 ).machine__slot--spinning .machine__slot__member-cover {
-    background-image: url('/img/hackastory-1.gif');
+    background-image: url('../img/hackastory-1.gif');
 }
 
 .machine__slot:nth-child( 2 ).machine__slot--spinning .machine__slot__member-cover {
-    background-image: url('/img/hackastory-2.gif');
+    background-image: url('../img/hackastory-2.gif');
 }
 
 .machine__slot:nth-child( 3 ).machine__slot--spinning .machine__slot__member-cover {
-    background-image: url('/img/hackastory-4.gif');
+    background-image: url('../img/hackastory-4.gif');
 }
 
 .machine__slot:nth-child( 4 ).machine__slot--spinning .machine__slot__member-cover {
-    background-image: url('/img/hackastory-3.gif');
+    background-image: url('../img/hackastory-3.gif');
 }
 
 .machine__slot:nth-child( 5 ).machine__slot--spinning .machine__slot__member-cover {
-    background-image: url('/img/hackastory-1.gif');
+    background-image: url('../img/hackastory-1.gif');
 }
 
 .machine__slot:nth-child( 6 ).machine__slot--spinning .machine__slot__member-cover {
-    background-image: url('/img/hackastory-4.gif');
+    background-image: url('../img/hackastory-4.gif');
 }
 
 
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/img/one-arm.jpg');
+    background-image: url('../img/one-arm.jpg');
 
     cursor: pointer;
 }
@@ -199,5 +199,5 @@ h1, h2, h3, h4, h5, h6 {
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: url('/img/shadow.jpg');
+    background-image: url('../img/shadow.jpg');
 }
