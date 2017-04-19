@@ -192,13 +192,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .machine__shadow {
     position: absolute;
-    left: 50%;
-    transform: translateX( -50% );
+    right: 0;
     bottom: -120px;
-    width: 454px;
+    left: 0;
     height: 43px;
 
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url('/img/shadow.jpg');
 }
