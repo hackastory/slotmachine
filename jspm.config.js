@@ -15,7 +15,6 @@ SystemJS.config({
   transpiler: "plugin-babel",
   packages: {
     "slotmachine": {
-      "main": "slotmachine.js",
       "format": "esm",
       "meta": {
         "*.js": {

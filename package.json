@@ -10,7 +10,6 @@
   },
   "jspm": {
     "name": "slotmachine",
-    "main": "slotmachine.js",
     "dependencies": {
       "json": "github:systemjs/plugin-json@^0.3.0",
       "text": "github:systemjs/plugin-text@^0.0.9",
