@@ -9,11 +9,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-select {
     position: absolute;
+    z-index: 5;
     display: flex;
     justify-content: center;
     top: 167px;
     right: 332px;
     left: 200px;
+
+    font-size: 35px;
 }
 
 .team-select__next,
@@ -26,12 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 .team-select__next,
 .team-select__previous {
     padding: 0 8px;
-    font-size: 45px;
     cursor: pointer;
-}
-
-.team-select__selected {
-    font-size: 45px;
 }
 
 /****************************/
@@ -177,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .machine__arm {
     position: absolute;
-    width: 295px;
+    width: 360px;
     height: 390px;
     z-index: 0;
     top: -202px;
