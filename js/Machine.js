@@ -42,14 +42,21 @@ export default Vue.component( 'machine', {
     created: function () {
         console.log('created');
 
+        var timeout;
+
         this.handleKeyProxy = function ( e ) {
 
             var keyCode = e.keyCode;
 
             switch ( keyCode ) {
 
-                case 13: // Enter
-                    this.handleOneArm();
+                case 13: // Enter bounce handler
+                    if ( timeout ) {
+                        clearTimeout( timeout );
+                    }
+                    timeout = setTimeout( function () {
+                        this.handleOneArm();
+                    }.bind( this ), 150 );
                     break;
             }
         }.bind( this );
