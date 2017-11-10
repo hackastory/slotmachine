@@ -19,11 +19,16 @@
             v-bind:team="selectedTeam"></machine>
 </div>
 
-<script src="build/slotmachine.sfx.js"></script>
+<script src="jspm_packages/system.js"></script>
+<script src="jspm.config.js"></script>
 <script>
-    new SlotMachine.default({
-        el: '#app'
+
+    System.import('slotmachine/js/SlotMachine.js').then( function ( module ) {
+        new module.default({
+            el: '#app'
+        });
     });
+
 </script>
 
 </body>

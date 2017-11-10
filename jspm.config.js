@@ -2,7 +2,7 @@ SystemJS.config({
   paths: {
     "npm:": "jspm_packages/npm/",
     "github:": "jspm_packages/github/",
-    "slotmachine/": "/"
+    "slotmachine/": ""
   },
   browserConfig: {
     "baseURL": "/"
@@ -21,6 +21,9 @@ SystemJS.config({
           "loader": "plugin-babel"
         }
       }
+    },
+    "npm:vue@2.2.6": {
+      "main": "dist/vue.min.js"
     }
   }
 });
@@ -37,9 +40,5 @@ SystemJS.config({
     "text": "github:systemjs/plugin-text@0.0.9",
     "vue": "npm:vue@2.2.6"
   },
-  packages: {
-    "vue": {
-      "main": "dist/vue.js"
-    }
-  }
+  packages: {}
 });

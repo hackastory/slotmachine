@@ -25,6 +25,7 @@
   "scripts": {
     "prebuild": "rimraf ./build && mkdir ./build",
     "build": "jspm build js/Slotmachine.js build/slotmachine.sfx.js --skip-source-maps --minify --global-name SlotMachine",
-    "dev": "http-server"
+    "dev": "http-server",
+    "postinstall": "jspm install"
   }
 }
