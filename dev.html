@@ -23,8 +23,17 @@
 <script src="jspm.config.js"></script>
 <script>
 
+    var teamsDataURL;
+    var teamsParam = /teams=([^&]+)/.exec( location.search );
+    if ( teamsParam && teamsParam.length == 2 ) {
+        teamsDataURL = decodeURIComponent( teamsParam.pop() );
+    }
+
     System.import('slotmachine/js/SlotMachine.js').then( function ( module ) {
         new module.default({
+            data: {
+                teamsURL: teamsDataURL
+            },
             el: '#app'
         });
     });

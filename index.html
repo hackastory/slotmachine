@@ -21,7 +21,17 @@
 
 <script src="build/slotmachine.sfx.js"></script>
 <script>
+
+    var teamsDataURL;
+    var teamsParam = /teams=([^&]+)/.exec( location.search );
+    if ( teamsParam && teamsParam.length == 2 ) {
+        teamsDataURL = decodeURIComponent( teamsParam.pop() );
+    }
+
     new SlotMachine.default({
+        data: {
+            teamsURL: teamsDataURL
+        },
         el: '#app'
     });
 </script>

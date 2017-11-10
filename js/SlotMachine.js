@@ -14,8 +14,11 @@ var SlotMachine = Vue.extend({
 
     mounted: function () {
 
+        var dataURL = this.teamsURL || 'teams.json';
         var request = new XMLHttpRequest();
-        request.open('GET', 'teams.json', true );
+
+        request.open('GET', dataURL, true );
+        request.setRequestHeader( 'Accept', 'application/json' );
 
         request.onload = function () {
             if ( request.status >= 200 && request.status < 400 ) {
